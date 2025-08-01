@@ -3,7 +3,6 @@ debug = true
 log_level = DEBUG
 
 [Display]
-display_name = Living Room TV
 display_ip = 192.168.1.50
 display_port = 8060
 display_make = Roku
@@ -11,4 +10,4 @@ display_host_input = HDMI1
 
 [Behavior]
 switch_to_host_input_on_wake = true
-sleep_on_display_off = false
+sleep_on_display_off = true
