@@ -8,7 +8,6 @@ SUPPORTED_DISPLAYS = ["LG", "Roku"]
 class AppConfig:
     debug_mode: Optional[bool] = False
     log_level: str = 'INFO'
-    display_name: str = 'Display'
     display_ip: Optional[str] = None
     display_port: Optional[int] = None
     display_make: Optional[str] = None
