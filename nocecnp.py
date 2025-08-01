@@ -29,7 +29,7 @@ async def watch_sleep_signals(display):
             display.power_off()
         else:
             print("System woke up, powering on display.")
-            sleep(2) # This sucks there has to be a way to ensure the network is up before sending a power on command
+            sleep(10) # This sucks there has to be a way to ensure the network is up before sending a power on command
             display.power_on()
 
     manager.on_prepare_for_sleep(on_prepare_for_sleep)
