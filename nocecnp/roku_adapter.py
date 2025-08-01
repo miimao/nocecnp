@@ -24,8 +24,4 @@ class RokuTV(DisplayInterface):
     def power_off(self):
         self.roku.poweroff()
 
-    def set_volume(self, level):
-        self.device.set_volume(level)
 
-    def launch_app(self, app_name):
-        self.device.launch_app(app_name)
