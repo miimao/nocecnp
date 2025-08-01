@@ -27,7 +27,6 @@ def read_config(config_path='/etc/opt/nocecnp/config.ini') -> AppConfig:
     return AppConfig(
         debug_mode=config.getboolean('General', 'debug', fallback=False),
         log_level=config.get('General', 'log_level'),
-        display_name=config.get('Display', 'display_name'),
         display_ip=config.get('Display', 'display_ip', fallback=None),
         display_port=config.getint('Display', 'display_port', fallback=None),
         display_make=config.get('Display', 'display_make', fallback=None),
